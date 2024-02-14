@@ -1,5 +1,7 @@
 ircserv
+ircserv_bonus
 /objs
+/objs_bonus
 .vscode
 compile_flags.txt
 .DS_Store
