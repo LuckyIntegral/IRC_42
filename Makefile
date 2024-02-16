@@ -54,7 +54,7 @@ clean	:
 		$(RM) $(OBJS_DIR) $(OBJS_DIR_B)
 
 fclean	:
-		$(RM) $(OBJS_DIR) $(OBJS_DIR_B) $(NAME)
+		$(RM) $(OBJS_DIR) $(OBJS_DIR_B) $(NAME) $(NAME_B)
 
 re		:
 		$(RM) $(OBJS_DIR) $(NAME)
