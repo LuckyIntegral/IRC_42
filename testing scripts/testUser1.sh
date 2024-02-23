@@ -22,20 +22,19 @@ echo "JOIN #channel"
 sleep 10;
 echo "PRIVMSG #channel : hello from testUser1"
 echo "MODE #channel +k 1234"
-sleep 1.5;
+sleep 1;
 echo "MODE #channel -k"
 echo "MODE #channel +i"
 sleep 1;
 echo "INVITE testUser2 #channel" 
-sleep 1.5;
+sleep 1;
 echo "MODE #channel -i" 
 echo "MODE #channel +o testUser2" 
 echo "MODE #channel -o testUser2" 
 sleep 1;
 echo "MODE #channel +t" 
 sleep 1;
-echo "MODE #channel -t" 
-sleep 1;
+echo "MODE #channel -t"
 echo "MODE #channel +l 1" 
 sleep 1;
 echo "MODE #channel -l" 
