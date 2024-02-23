@@ -18,7 +18,8 @@ echo $! > "my_pipe_${USERNUM}_pid"
 {(echo "USER testUser2" 
 echo "NICK testUser2" 
 echo "PASS 1234" 
-sleep 11
+sleep 10
+sleep 1
 echo "JOIN #channel abced" 
 echo "JOIN #channel 1234" 
 echo "PRIVMSG #channel : hello from testUser2"
@@ -27,15 +28,14 @@ sleep 1;
 echo "JOIN #channel"
 sleep 1;
 echo "JOIN #channel" 
-sleep 1.5;
-echo "TOPIC #channel :This is the new topic"
 sleep 1;
-echo "TOPIC #channel :This is the new topic"
+echo "TOPIC #channel :This is the new unprotected topic"
+sleep 1;
+echo "TOPIC #channel :This is the new protected topic"
 echo "PART #channel" 
 sleep 1;
 echo "JOIN #channel"
 sleep 1;
-echo "JOIN #channel"
 echo "KICK #channel testUser1" 
 sleep 1;
 echo "QUIT" )}> my_pipe_2
