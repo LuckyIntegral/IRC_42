@@ -46,6 +46,7 @@ echo "PRIVMSG admin :Hello admin"
 sleep 1;
 echo "PRIVMSG admin :Do you like my script ? " 
 sleep 1;
+echo "USER BYE"
 echo "NICK BYE"
 echo "QUIT" )}> my_pipe_1
 
